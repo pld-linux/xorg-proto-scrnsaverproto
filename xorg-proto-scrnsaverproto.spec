@@ -1,16 +1,15 @@
 Summary:	ScrnSaver protocol and ancillary headers
 Summary(pl):	Nag³ówki protoko³u ScrnSaver i pomocnicze
 Name:		xorg-proto-scrnsaverproto
-Version:	1.0.1
+Version:	1.0.2
 Release:	0.1
 License:	MIT
 Group:		X11/Development/Libraries
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC1/proto/scrnsaverproto-%{version}.tar.bz2
-# Source0-md5:	9f82f6ce451b0d2543af405c91631a73
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC4/proto/scrnsaverproto-%{version}.tar.bz2
+# Source0-md5:	f5687667b79e8eade58c8d51a889f0b7
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
-BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-util-util-macros
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -55,5 +54,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
+%doc COPYING ChangeLog
 %{_includedir}/X11/extensions/*.h
 %{_pkgconfigdir}/scrnsaverproto.pc
