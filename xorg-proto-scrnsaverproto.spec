@@ -5,8 +5,8 @@ Version:	1.0.2
 Release:	0.1
 License:	MIT
 Group:		X11/Development/Libraries
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC4/proto/scrnsaverproto-%{version}.tar.bz2
-# Source0-md5:	f5687667b79e8eade58c8d51a889f0b7
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/proto/scrnsaverproto-%{version}.tar.bz2
+# Source0-md5:	a7ddc31ab80637cae83042190d5001ec
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
