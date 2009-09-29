@@ -1,5 +1,5 @@
-Summary:	ScrnSaver protocol and ancillary headers
-Summary(pl.UTF-8):	Nagłówki protokołu ScrnSaver i pomocnicze
+Summary:	ScrnSaver extension headers
+Summary(pl.UTF-8):	Nagłówki rozszerzenia ScrnSaver
 Name:		xorg-proto-scrnsaverproto
 Version:	1.2.0
 Release:	1
@@ -10,26 +10,26 @@ Source0:	http://xorg.freedesktop.org/releases/individual/proto/scrnsaverproto-%{
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
-BuildRequires:	xorg-util-util-macros
+BuildRequires:	xorg-util-util-macros >= 1.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-ScrnSaver protocol and ancillary headers.
+ScrnSaver extension headers.
 
 %description -l pl.UTF-8
-Nagłówki protokołu ScrnSaver i pomocnicze.
+Nagłówki rozszerzenia ScrnSaver.
 
 %package devel
-Summary:	ScrnSaver protocol and ancillary headers
-Summary(pl.UTF-8):	Nagłówki protokołu ScrnSaver i pomocnicze
+Summary:	ScrnSaver extension headers
+Summary(pl.UTF-8):	Nagłówki rozszerzenia ScrnSaver
 Group:		X11/Development/Libraries
 Requires:	xorg-proto-xproto-devel
 
 %description devel
-ScrnSaver protocol and ancillary headers.
+ScrnSaver extension headers.
 
 %description devel -l pl.UTF-8
-Nagłówki protokołu ScrnSaver i pomocnicze.
+Nagłówki rozszerzenia ScrnSaver.
 
 %prep
 %setup -q -n scrnsaverproto-%{version}
@@ -55,5 +55,5 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %doc COPYING ChangeLog
-%{_includedir}/X11/extensions/*.h
+%{_includedir}/X11/extensions/saver*.h
 %{_pkgconfigdir}/scrnsaverproto.pc
