@@ -2,7 +2,7 @@ Summary:	ScrnSaver extension headers
 Summary(pl.UTF-8):	Nagłówki rozszerzenia ScrnSaver
 Name:		xorg-proto-scrnsaverproto
 Version:	1.2.2
-Release:	1
+Release:	2
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/scrnsaverproto-%{version}.tar.bz2
