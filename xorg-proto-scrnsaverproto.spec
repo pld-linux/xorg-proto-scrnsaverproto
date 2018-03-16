@@ -1,13 +1,14 @@
+# NOTE: now maintained in xorg-proto-xorgproto.spec
 Summary:	ScrnSaver extension headers
 Summary(pl.UTF-8):	Nagłówki rozszerzenia ScrnSaver
 Name:		xorg-proto-scrnsaverproto
 Version:	1.2.2
-Release:	2
+Release:	2.1
 License:	MIT
 Group:		X11/Development/Libraries
-Source0:	http://xorg.freedesktop.org/releases/individual/proto/scrnsaverproto-%{version}.tar.bz2
+Source0:	https://xorg.freedesktop.org/releases/individual/proto/scrnsaverproto-%{version}.tar.bz2
 # Source0-md5:	edd8a73775e8ece1d69515dd17767bfb
-URL:		http://xorg.freedesktop.org/
+URL:		https://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	docbook-dtd43-xml
